@@ -1,0 +1,24 @@
+/*
+    Document   : controlStyle2
+*/
+
+.root{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Courier New";
+    -fx-base: rgb(132, 145, 47);
+    -fx-background: rgb(225, 228, 203);
+}
+
+.button{
+    -fx-text-fill: rgb(49, 89, 23);
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-border-radius: 5;
+    -fx-padding: 3 6 6 6;
+}
+
+.borders{
+    -fx-border-color: rgb(103, 100, 78);
+    -fx-border-style: dotted;
+    -fx-border-width: 1.5;
+    -fx-border-insets: -5;
+}

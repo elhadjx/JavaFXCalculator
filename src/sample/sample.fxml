@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_RIGHT" spacing="5.0" style="-fx-background-color: rgba(25,25,25,0.8); -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: rgba(255,213,72,0.7); -fx-background-radius: 50;" text="X" textAlignment="RIGHT" textFill="WHITE" />
+      <Label fx:id="operation" alignment="CENTER_RIGHT" contentDisplay="BOTTOM" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" opacity="0.77" prefHeight="80.0" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="result" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </Label>
+      <HBox spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clear" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50;" text="C">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50;" text="E">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50;" text="\%">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operator" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(255,213,72); -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="÷" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="7" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="8" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="9" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operator" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(255,213,72); -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="×" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="4" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="5" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="6" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operator" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(255,213,72); -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="-" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="1" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="2" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="3" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operator" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(255,213,72); -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="+" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="5.0">
+         <children>
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="145.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <padding>
+                  <Insets bottom="2.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#number" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(40,40,40); -fx-border-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="." textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operator" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgb(255,213,72); -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="=" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
